@@ -1,0 +1,62 @@
+{
+  "name": "cloud-s-time-capsule",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Cloud's time capsule",
+  "author": "Cloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umaim/Blog.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "blog",
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.5",
+    "gatsby": "^5.0.1",
+    "gatsby-plugin-google-analytics": "^5.0.0",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-mdx": "^5.0.0",
+    "gatsby-plugin-offline": "^6.0.0",
+    "gatsby-plugin-sass": "^6.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-sitemap": "^6.0.0",
+    "gatsby-remark-autolink-headers": "^6.0.0",
+    "gatsby-remark-images": "^7.0.0",
+    "gatsby-remark-prismjs": "^7.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-remark": "^6.0.0",
+    "gatsby-transformer-sharp": "^5.0.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/gatsby-transformer-remark": "^2.9.1",
+    "@types/node": "^18.11.9",
+    "@types/prismjs": "^1.26.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/sass": "^1.43.1",
+    "@types/sharp": "^0.30.5",
+    "gatsby-plugin-dts-css-modules": "^3.0.0",
+    "typescript": "^4.9.3"
+  }
+}
