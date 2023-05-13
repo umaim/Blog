@@ -71,9 +71,11 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+**/.cache
 
 # Next.js build output
 .next
@@ -106,3 +108,6 @@ public
 # Auto genetated
 src/gatsby-types.d.ts
 src/**/*.scss.d.ts
+
+.idea
+.DS_Store

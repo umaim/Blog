@@ -4,6 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Cloud's Time Capsule`,
     siteUrl: `https://uma.im`,
+    author: "Cloud",
   },
   graphqlTypegen: true,
   plugins: [
