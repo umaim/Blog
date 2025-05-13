@@ -29,8 +29,8 @@ const latestDatetime =
   modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime;
 const datetime = dayjs(latestDatetime).tz(postTimezone || SITE.timezone);
 
-const date = datetime.format("D MMM, YYYY"); // e.g., '22 Mar, 2025'
-const time = datetime.format("hh:mm A"); // e.g., '08:30 PM'
+const date = datetime.format("YYYY-MM-DD"); // e.g., '2025-05-13'
+const time = datetime.format("HH:mm"); // e.g., '17:16'
 ---
 
 <div class:list={["flex items-end space-x-2 opacity-80", className]}>
@@ -43,7 +43,7 @@ const time = datetime.format("hh:mm A"); // e.g., '08:30 PM'
   {
     modDatetime && modDatetime > pubDatetime ? (
       <span class:list={["text-sm italic", { "sm:text-base": size === "lg" }]}>
-        Updated:
+        更新:
       </span>
     ) : (
       <span class="sr-only">Published:</span>
