@@ -16,7 +16,7 @@ export default defineConfig({
     remarkPlugins: [[remarkToc, { heading: "目录" }]],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
-      themes: { light: "min-light", dark: "night-owl" },
+      themes: { light: "github-light", dark: "github-dark" },
       wrap: true,
     },
   },
