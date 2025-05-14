@@ -17,4 +17,11 @@ export const SOCIALS = [
   },
 ] as const;
 
-export const SHARE_LINKS = [] as const;
+export const SHARE_LINKS = [
+  {
+    name: "Mail",
+    href: "mailto:?subject=See%20this%20post&body=",
+    linkTitle: `电子邮件分享`,
+    icon: IconMail,
+  },
+] as const;
