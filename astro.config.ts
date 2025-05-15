@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import remarkToc from "remark-toc";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
@@ -13,7 +15,8 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [[remarkToc, { heading: "目录" }]],
+    remarkPlugins: [remarkMath, [remarkToc, { heading: "目录" }]],
+    rehypePlugins: [rehypeKatex],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "github-light", dark: "github-dark" },

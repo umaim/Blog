@@ -53,4 +53,14 @@
     font-weight: var(--shiki-dark-font-weight) !important;
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
+
+  .katex {
+    color: var(--color-foreground) !important;
+    background-color: var(--color-background) !important;
+  }
+
+  kbd {
+    color: var(--color-foreground) !important;
+    @apply border-border bg-muted/50 text-foreground/80;
+  }
 }
