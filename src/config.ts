@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://uma.im/",
   desc: "Cloud's Blog | Stay Hungry, Stay Foolish.",
   title: "Cloud's Time Capsule",
-  ogImage: "",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerIndex: 8,
   postPerPage: 8,
