@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/config";
+import { pwaInfo } from "virtual:pwa-info";
 import "@/styles/global.css";
 import "katex/dist/katex.min.css";
 
@@ -59,9 +60,12 @@ const structuredData = {
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Cloud's Blog" />
-    <link rel="manifest" href="/manifest.json" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- PWA Support -->
+    <script src="@/pwa.ts"></script>
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
 
     <!-- General Meta Tags -->
     <title>{title}</title>
