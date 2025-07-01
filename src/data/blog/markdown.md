@@ -90,6 +90,43 @@ function fibonacci(n) {
 }
 ```
 
+<!-- [!code ++] -->
+#### 代码行高亮语法 [!code <...>]
+
+| 高亮语义       | 语法             |
+|------------|----------------------|
+| 高亮本行   | `[!code highlight]`    |
+| 高亮两行   | `[!code highlight:2]`  |
+| 新增本行   | `[!code ++]`       |
+| 新增两行   |`[!code ++:2]`       |
+| 删除本行   | `[!code --]`       |
+| 删除3行    | `[!code --:3]`      |
+
+预览：
+
+```js
+高亮本行// [!code highlight]
+
+// [!code highlight:2]
+高亮两行
+高亮两行
+
+新增本行// [!code ++]
+
+// [!code ++:2]
+新增两行
+新增两行
+
+删除本行// [!code --]
+
+// [!code --:3]
+删除三行
+删除三行
+删除三行
+```
+
+类 HTML 语言语法，使用 `<!--注释-->` 形式语法即可
+
 当前使用 shiki 作为代码高亮插件，支持的语言请参考 [shiki / languages](https://shiki.matsu.io/languages.html)。
 
 ### 行内公式
