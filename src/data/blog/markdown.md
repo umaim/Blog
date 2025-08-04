@@ -105,7 +105,7 @@ function fibonacci(n) {
 
 预览：
 
-```js
+```js file=example.js
 高亮本行; // [!code highlight]
 
 // [!code highlight:2]

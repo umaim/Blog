@@ -194,7 +194,7 @@ _更多指令详情参见[官方使用手册 COMMAND 指令一节](https://docs.
 
 来源：https://docs.brew.sh/Adding-Software-to-Homebrew#examples
 
-```ruby
+```ruby file=pomello.rb
 cask "pomello" do
   version "0.10.17"
   sha256 :no_check
@@ -276,7 +276,7 @@ Homebrew 会自动以 `--set-name` 参数的值创建一个同名的文件（如
 
 参考[经典版富途牛牛 Homebrew 脚本](https://github.com/Homebrew/homebrew-cask/blob/06fb0cd45feb41f3d019c4f5ad386d42c90f64b6/Casks/f/futubull.rb)。
 
-```ruby
+```ruby file=futubull@legacy.rb
 cask "futubull@legacy" do
   version "15.17.11608"
   sha256 :no_check
