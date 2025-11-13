@@ -17,7 +17,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.15.5",
+    "astro": "^5.15.6",
     "dayjs": "^1.11.19",
     "katex": "^0.16.25",
     "lodash.kebabcase": "^4.1.1",
